@@ -18,7 +18,7 @@ class Documenti
         $allowed = ['anno', 'data_inizio', 'data_fine', 'cliente', 'fornitore', 'id_fornitore', 'id_cliente', 'saldato', 'oggetto', 'ogni_ddt',
             'PA_tipo_cliente', 'PA', 'pagina', ];
 
-        $required = ['anno'];
+        $required = [];//['anno']; anno non è required se viene passato un range di date
 
         return Common::parseData($data, $allowed, $required);
     }
